@@ -53,126 +53,43 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
-main {
-    margin : 50px;
-    display : inline-flex;
-    flex-wrap : wrap;
-    justify-content: space-between;
-    height: 80%;
+body {
+    background-color: #ecf2f8;
 }
 
-.left-section {
-    display:inline-flex;
-    flex-direction: column;
-    width: 75%;
-    justify-content: space-between;
+#testimonial-grid-container {
+    padding : 5% 3%;
 }
 
-.right-section {
-    border : 3px solid green;
-    width: 21%;
-    border-radius: 10px;
+#testimonial-1 {
+    background-color: #7541c8;
+    color : #ffffff;
 }
 
-.left-top-section {
-    display:inline-flex;
-    width: 100%;
-    height: 48%;
-    justify-content: space-between;
+#testimonial-2 {
+    background-color: #48556a;
+    color : #ffffff;
 }
 
-.left-top-left-section {
-    width: 68%;
-    height: 100%;
-    background-color: blueviolet;
-    border: 4px solid blue;
+#testimonial-3 {
+    background-color: #ffffff;
 }
 
-.left-top-right-section {
-    width: 27.5%;
-    height: 100%;
-    background-color: hsl(217, 19%, 35%);
+#testimonial-4 {
+    background-color: #19212e;
+    color : #ffffff;
 }
 
-.left-bottom-section {
-    display: inline-flex;
-    width: 100%;
-    height: 47.5%;
-    justify-content: space-between;
+#testimonial-5 {
+    background-color: #ffffff;
 }
 
-.left-bottom-left-section {
-    border : 3px solid blueviolet;
-    width: 27.5%;
-    height: 100%;
+.grid-item {
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
-.left-bottom-right-section {
-    background-color: hsl(219, 29%, 14%);
-    width: 67.5%;
-    height: 100%;
-}
 
-.left-bottom-right-section img {
-    border : 2px solid hsl(263, 55%, 52%);
-}
-
-.information {
-    border-radius: 10px;
-    height: 100%;
-    display: inline-flex;
-    flex-direction: column;
-    padding : 20px;
-}
-
-.information-heading {
-    display: flex;
-    align-items: center;   
-    flex-grow: 1; 
-}
-
-.user {
-    width: 90%;
-    display:flex;
-    flex-direction: column;
-    padding-left : 20px;
-}
-
-.information img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-
-.information h1 {
-    width: 90%;
-    color : white;
-}
-
-.graduate-type {
-    opacity: 50%;
-    color : white;
-}
-
-.description {
-    color : white;
-    flex-grow: 1.5;
-    padding: 5px;
-    font-size : 1.9rem;
-}
-
-.review {
-    flex-grow: 2;
-    opacity: 70%;
-    color: white;
-    padding: 5px;
-    font-size : 1.4rem;
-}
-
-.left-bottom-left-section .information {
-    background-color: orange;
-}
-
-.right-section .information {
-    background-color: orange;
+@media (min-width : 576px) {
+    
 }
