@@ -1,0 +1,178 @@
+/*
+1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/*
+2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+/*
+3. Allow percentage-based heights in the application
+*/
+html, body {
+    height: 100%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+/*
+Typographic tweaks!
+4. Add accessible line-height
+5. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-size : 13px;
+}
+/*
+6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+/*
+7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+    font: inherit;
+}
+/*
+8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+/*
+9. Create a root stacking context
+*/
+#root, #__next {
+    isolation: isolate;
+}
+
+main {
+    margin : 50px;
+    display : inline-flex;
+    flex-wrap : wrap;
+    justify-content: space-between;
+    height: 80%;
+}
+
+.left-section {
+    display:inline-flex;
+    flex-direction: column;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.right-section {
+    border : 3px solid green;
+    width: 21%;
+    border-radius: 10px;
+}
+
+.left-top-section {
+    display:inline-flex;
+    width: 100%;
+    height: 48%;
+    justify-content: space-between;
+}
+
+.left-top-left-section {
+    width: 68%;
+    height: 100%;
+    background-color: blueviolet;
+    border: 4px solid blue;
+}
+
+.left-top-right-section {
+    width: 27.5%;
+    height: 100%;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.left-bottom-section {
+    display: inline-flex;
+    width: 100%;
+    height: 47.5%;
+    justify-content: space-between;
+}
+
+.left-bottom-left-section {
+    border : 3px solid blueviolet;
+    width: 27.5%;
+    height: 100%;
+}
+
+.left-bottom-right-section {
+    background-color: hsl(219, 29%, 14%);
+    width: 67.5%;
+    height: 100%;
+}
+
+.left-bottom-right-section img {
+    border : 2px solid hsl(263, 55%, 52%);
+}
+
+.information {
+    border-radius: 10px;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    padding : 20px;
+}
+
+.information-heading {
+    display: flex;
+    align-items: center;   
+    flex-grow: 1; 
+}
+
+.user {
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    padding-left : 20px;
+}
+
+.information img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.information h1 {
+    width: 90%;
+    color : white;
+}
+
+.graduate-type {
+    opacity: 50%;
+    color : white;
+}
+
+.description {
+    color : white;
+    flex-grow: 1.5;
+    padding: 5px;
+    font-size : 1.9rem;
+}
+
+.review {
+    flex-grow: 2;
+    opacity: 70%;
+    color: white;
+    padding: 5px;
+    font-size : 1.4rem;
+}
+
+.left-bottom-left-section .information {
+    background-color: orange;
+}
+
+.right-section .information {
+    background-color: orange;
+}
