@@ -53,6 +53,10 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+
 main,
 .left-section,
 .left-top-section,
@@ -84,13 +88,18 @@ main {
     justify-content: space-between;
 }
 
+.left-top-left-section {
+    position: relative;
+    z-index: 0;
+}
+
 .left-top-left-section,
 .left-bottom-right-section {
     flex-basis: 73%;
 }
 
 .left-top-left-section .information {
-    background-color: blueviolet;
+    background-color: #733FC8ff;
 }
 
 .left-bottom-left-section,
@@ -127,7 +136,7 @@ main {
     padding-left : 20px;
 }
 
-.information img {
+.information-heading img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -136,6 +145,8 @@ main {
 .information h1 {
     width: 90%;
     color : white;
+    z-index: 3;
+    position: relative;
 }
 
 .graduate-type {
@@ -148,6 +159,8 @@ main {
     flex-grow: 1.5;
     padding: 5px;
     font-size : 1.9rem;
+    position: relative;
+    z-index: 3;
 }
 
 .review {
@@ -158,7 +171,33 @@ main {
     font-size : 1.4rem;
 }
 
+
+.left-bottom-left-section .information .user h1,
+.left-bottom-left-section .information .user p,
+.left-bottom-left-section .information .description,
+.left-bottom-left-section .information .review,
+.right-section .information .user h1,
+.right-section .information .user p,
+.right-section .information .description,
+.right-section .information .review {
+    color : black;
+}
+
 .right-section .information,
 .left-bottom-left-section .information {
-    background-color: orange;
+    background-color: white;
+}
+
+.left-bottom-right-section img,
+.left-top-left-section img {
+    border : 2px solid #7B4AC9ff;
+}
+
+#quote {
+    border : 0px solid #ffffff;
+    position : absolute;
+    right : 15%;
+    top : 5;
+    z-index: 0;
+    height: 14vh;
 }
