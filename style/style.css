@@ -53,64 +53,66 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
+main,
+.left-section,
+.left-top-section,
+.left-bottom-section,
+.information {
+    display : flex;
+}
+
 main {
     margin : 50px;
-    display : inline-flex;
-    flex-wrap : wrap;
     justify-content: space-between;
 }
 
 .left-section {
-    display:inline-flex;
     flex-direction: column;
-    flex-basis: 75%;
+    flex-basis: 73%;
+    justify-content: space-between;
 }
 
 .right-section {
-    border : 3px solid green;
     flex-basis: 25%;
 }
 
 .left-top-section {
-    display:inline-flex;
+    margin-bottom : 2%;
+}
+
+.left-top-section, .left-bottom-section {
     justify-content: space-between;
+}
+
+.left-top-left-section,
+.left-bottom-right-section {
+    flex-basis: 73%;
 }
 
 .left-top-left-section {
     background-color: blueviolet;
-    border: 4px solid blue;
-    flex-basis: 75%;
+}
+
+.left-bottom-left-section,
+.left-top-right-section {
+    flex-basis: 25%;
 }
 
 .left-top-right-section {
-    flex-basis: 25%;
     background-color: hsl(217, 19%, 35%);
 }
 
-.left-bottom-section {
-    display: inline-flex;
-}
-
-.left-bottom-left-section {
-    border : 3px solid blueviolet;
-    flex-basis: 25%;
-}
 
 .left-bottom-right-section {
     background-color: hsl(219, 29%, 14%);
-    flex-basis : 75%;
 }
 
-.left-bottom-right-section img {
-    border : 2px solid hsl(263, 55%, 52%);
-}
 
 .information {
-    border-radius: 10px;
     height: 100%;
-    display: inline-flex;
     flex-direction: column;
     padding : 20px;
+    border-radius: 10px;
 }
 
 .information-heading {
@@ -156,10 +158,7 @@ main {
     font-size : 1.4rem;
 }
 
+.right-section,
 .left-bottom-left-section .information {
-    background-color: orange;
-}
-
-.right-section .information {
     background-color: orange;
 }

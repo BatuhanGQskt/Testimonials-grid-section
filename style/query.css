@@ -3,8 +3,6 @@
         margin : 50px;
         display : flex;
         flex-direction: column;
-        flex-wrap : nowrap;
-        height: 1000px;
     }
 
     .left-section {
